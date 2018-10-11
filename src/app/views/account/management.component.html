@@ -1,0 +1,33 @@
+<div class="animated fadeIn">
+    <div class="card">
+        <div class="card-header">
+          账号查询
+        </div>
+        <div class="col-md-12">
+            <div class="card-body">
+              <div class="row">  
+                  <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-prepend">
+                          <button type="button" class="btn btn-primary" (click)="search(accountNo.value)" ><i class="fa fa-search"></i> 查询</button>
+                        </span>
+                        <input type="text" id="search-text" name="search-text" class="form-control" placeholder="用户账号" #accountNo>
+                    </div>
+                  </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                  <label>姓名：{{idInfo.idName}}</label>
+                  <!-- <input type="text" class="form-control" id="name" placeholder="Enter your name"> -->
+                </div> 
+            </div><!--/.row-->
+            <div class="row">
+                <div class="form-group">
+                  <label>证件号：{{idInfo.idNo}}</label>
+                </div>
+            </div><!--/.row-->
+
+          </div>
+        </div>
+      </div>
+</div>
